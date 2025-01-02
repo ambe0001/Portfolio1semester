@@ -1,0 +1,145 @@
+/***********Reset**************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/******************* Menu *********************/
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fffeef;
+  z-index: 10;
+}
+
+.logo {
+  width: 7%;
+  margin: 0.5rem;
+  margin-left: 1rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #fffeef;
+  font-weight: 400;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 30px;
+  margin-right: 50px;
+}
+
+.menu li {
+  margin-right: 20px;
+  background-color: #fffeef;
+  border-width: 5cm;
+  float: left;
+}
+.menu li:hover {
+  color: #5362ae;
+  background-color: #fffeef;
+  transition: all 0.3s ease;
+}
+.activ {
+  color: #5362ae;
+  text-decoration: underline;
+}
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 30px;
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s, text-decoration-thickness 0.3s ease;
+  text-decoration-thickness: 0;
+}
+
+.menu a:hover {
+  color: #5362ae;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #5362ae;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+
+/*********** Burgermenu *************/
+
+@media screen and (max-width: 700px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+    margin-right: 0.5rem;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+  nav.active .menu {
+    display: block;
+    background-color: #fffeef;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    margin-top: 3rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    height: 1000px;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 16px;
+    text-align: center;
+  }
+}
