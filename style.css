@@ -9,6 +9,8 @@ img {
   width: 100%;
   height: auto;
   display: block;
+  align-self: stretch;
+  object-fit: cover;
 }
 
 /******************* Menu *********************/
@@ -99,7 +101,7 @@ nav {
 
 /*********** Burgermenu *************/
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .menu {
     display: none;
   }
@@ -146,17 +148,123 @@ nav {
 
 /************** Forside  *********/
 .forsidebaggrund {
-  background-image: url(forsidebaggrund.webp);
+  background-image: url(imgs/forsidebaggrund.webp);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fffeef;
+  background-repeat: no-repeat;
+  aspect-ratio: 1512/982;
+  background-size: cover;
+  z-index: 1000;
 }
 
+.forsideskrift {
+  margin-left: 3.5%;
+  font-size: 5vw;
+  margin-top: 13%;
+  color: white;
+}
+
+/********** Amanda Bech side  *********/
+
+.amandabechimgs {
+  align-self: stretch;
+  object-fit: cover;
+}
+
+/********* overskrifter og tekst **********/
+
 h1 {
-  /* color: white; */
   text-align: center;
   font-size: 80px;
-  color: white;
-  margin-left: 2rem;
-  margin-top: 10rem;
   font-family: "Staatliches", serif;
   font-weight: 400;
   font-style: normal;
+}
+
+h2 {
+  font-family: "Roboto Flex", serif;
+  font-size: 40px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.7rem;
+}
+
+/************* KONTAKTFORMULAR *************/
+.contact-container p {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1rem;
+  font-weight: normal;
+  text-align: center;
+  color: #405572;
+}
+.contact-container {
+  padding: 20px 30px;
+  justify-content: center;
+  position: relative;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #5362ae;
+  border-radius: 25px;
+  background-color: #fffeef;
+  font-size: 14px;
+  font-family: "Roboto Flex", serif;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+  width: 96.5%;
+}
+
+button {
+  background-color: #f34e4c;
+  width: 100px;
+  height: 40px;
+  font-family: "Baumans", serif;
+  border-radius: 25px;
+  font-size: 18px;
+  border: 3px solid #f34e4c;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+/********* Layout grids  *********/
+@media (min-width: 850px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .order {
+    order: 1;
+  }
+}
+
+@media (min-width: 800px) {
 }
