@@ -175,6 +175,12 @@ nav {
   object-fit: cover;
 }
 
+/*********** 0.5 *********/
+
+.h205 {
+  font-size: 65px;
+}
+
 /********* overskrifter og tekst **********/
 
 h1 {
@@ -252,6 +258,23 @@ button {
   text-decoration: none;
   color: white;
   cursor: pointer;
+}
+
+.button {
+  background-color: #f34e4c;
+  width: 100px;
+  height: 40px;
+  font-family: "Baumans", serif;
+  border-radius: 25px;
+  font-size: 18px;
+  border: 3px solid #f34e4c;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.tema02 {
+  background-image: url(imgs/mac.png);
 }
 
 /********* Layout grids  *********/
