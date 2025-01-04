@@ -101,7 +101,7 @@ nav {
 
 /*********** Burgermenu *************/
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 850px) {
   .menu {
     display: none;
   }
@@ -142,7 +142,7 @@ nav {
 
   nav.active .menu a {
     font-size: 16px;
-    text-align: center;
+    align-self: center;
   }
 }
 
@@ -162,25 +162,32 @@ nav {
 }
 
 .forsideskrift {
-  margin-left: 3.5%;
+  margin-left: 2%;
   font-size: 5vw;
   margin-top: 13%;
   color: white;
 }
 
-/********** Amanda Bech side  *********/
-
-.amandabechimgs {
-  align-self: stretch;
-  object-fit: cover;
+/******** ramme om billeder  ***********/
+.ramme {
+  width: 100%;
+  border: 32px solid #5362ae;
+  border-radius: 10px;
+}
+.ramme2 {
+  width: 95%;
+  border: 32px solid #5362ae;
+  border-radius: 10px;
+}
+.ramme3 {
+  width: 100%;
+  border: 5px solid #5362ae;
+  border-radius: 10px;
 }
 
-/*********** 0.5 *********/
-
-.h205 {
-  font-size: 65px;
+.linjer {
+  margin-top: 7rem;
 }
-
 /********* overskrifter og tekst **********/
 
 h1 {
@@ -244,50 +251,176 @@ textarea {
 textarea {
   resize: none;
   height: 80px;
-  width: 96.5%;
 }
 
 button {
   background-color: #f34e4c;
-  width: 100px;
-  height: 40px;
+  width: 25%;
+  height: 25%;
   font-family: "Baumans", serif;
-  border-radius: 25px;
-  font-size: 18px;
-  border: 3px solid #f34e4c;
+  border-radius: 50px;
+  font-size: 25px;
+  border: 15px solid #f34e4c;
   text-decoration: none;
   color: white;
   cursor: pointer;
+  margin-bottom: 2rem;
 }
+
+/******* besøg website knao  ********/
 
 .button {
   background-color: #f34e4c;
-  width: 100px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
   font-family: "Baumans", serif;
-  border-radius: 25px;
-  font-size: 18px;
-  border: 3px solid #f34e4c;
+  border-radius: 50px;
+  font-size: 25px;
+  border: 15px solid #f34e4c;
   text-decoration: none;
   color: white;
-  cursor: pointer;
-}
-
-.tema02 {
-  background-image: url(imgs/mac.png);
 }
 
 /********* Layout grids  *********/
+
 @media (min-width: 850px) {
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+  }
+
+  .grid2_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   .order {
     order: 1;
   }
 }
+/********* svg bølge  **********/
+.desktoponly,
+.mobileonly {
+  display: none;
+}
 
-@media (min-width: 800px) {
+.grid3_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/******* desktop version  *********/
+@media (min-width: 850px) {
+  .desktoponly {
+    display: block;
+  }
+
+  .ramme {
+    margin-left: 2rem;
+  }
+
+  p {
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+  }
+  .pmargin {
+    margin-left: 2rem;
+  }
+  h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .h2margin {
+    margin-left: 2rem;
+  }
+
+  .form-row {
+    margin-left: 1.5rem;
+    margin-right: 2rem;
+  }
+}
+
+/******* mobile version  *********/
+@media (max-width: 850px) {
+  .mobileonly {
+    display: block;
+  }
+  li {
+    clear: left;
+  }
+
+  .svg1 {
+    width: 0%;
+    height: 0%;
+  }
+  .ramme2 {
+    border: 5px solid #5362ae;
+    width: 100%;
+  }
+  .ramme {
+    border: 5px solid #5362ae;
+  }
+  h2 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  h1 {
+    font-size: 50px;
+    margin-top: 3rem;
+  }
+
+  .pmarginmobile {
+    margin-bottom: 2rem;
+  }
+  p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .form-row {
+    margin-left: 1rem;
+    margin-right: 2rem;
+  }
+  .button {
+    margin-left: 1rem;
+    font-size: 20px;
+    border: 10px solid #f34e4c;
+  }
+
+  button {
+    background-color: #f34e4c;
+    width: 25%;
+    height: 25%;
+    font-size: 20px;
+    border: 10px solid #f34e4c;
+  }
+}
+
+/****** tablet version *******/
+@media (max-width: 1200px) {
+  .linjer {
+    margin-top: 1rem;
+  }
+}
+
+/******** Footer  **********/
+.grid_1-1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid_1-1-1-1 img {
+  width: 40%;
+}
+
+footer {
+  background-color: #fffeef;
+  margin-top: 2rem;
+}
+
+.footerline {
+  border-left: 2px solid black;
+}
+.amandabechimg {
+  border-radius: 5px;
 }
