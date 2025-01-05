@@ -1,4 +1,4 @@
-/***********Reset**************/
+/*************************************Reset*******************************/
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +13,7 @@ img {
   object-fit: cover;
 }
 
-/******************* Menu *********************/
+/************************************ Menu ************************************/
 
 header {
   position: sticky;
@@ -99,7 +99,7 @@ nav {
   display: none;
 }
 
-/*********** Burgermenu *************/
+/*********************************** Burgermenu ******************************/
 
 @media screen and (max-width: 850px) {
   .menu {
@@ -146,18 +146,15 @@ nav {
   }
 }
 
-/************** Forside  *********/
+/********************************************* Forside  **********************************/
 .forsidebaggrund {
   background-image: url(imgs/forsidebaggrund.webp);
-  width: 100%;
-  height: 100%;
-  position: absolute;
   top: 0;
   left: 0;
   background-color: #fffeef;
   background-repeat: no-repeat;
   aspect-ratio: 1512/982;
-  background-size: cover;
+  background-size: contain;
   z-index: 1000;
 }
 
@@ -168,7 +165,7 @@ nav {
   color: white;
 }
 
-/******** ramme om billeder  ***********/
+/********************************** Ramme om billeder  ***************************/
 .ramme {
   width: 100%;
   border: 32px solid #5362ae;
@@ -183,19 +180,33 @@ nav {
   width: 100%;
   border: 5px solid #5362ae;
   border-radius: 10px;
+  background-color: #fffeef;
+}
+
+.amandabechimg {
+  border-radius: 5px;
+  width: 98%;
 }
 
 .linjer {
   margin-top: 7rem;
 }
-/********* overskrifter og tekst **********/
+/************************************ Overskrifter og tekst ***********************/
 
 h1 {
   text-align: center;
-  font-size: 80px;
+  font-size: 79px;
   font-family: "Staatliches", serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.passion {
+  font-size: 70px;
+}
+
+.virksomhed {
+  font-size: 70px;
 }
 
 h2 {
@@ -267,7 +278,7 @@ button {
   margin-bottom: 2rem;
 }
 
-/******* besøg website knao  ********/
+/******* besøg website knap og a tag til figma ********/
 
 .button {
   background-color: #f34e4c;
@@ -279,6 +290,9 @@ button {
   border: 15px solid #f34e4c;
   text-decoration: none;
   color: white;
+}
+.figma {
+  color: #5362ae;
 }
 
 /********* Layout grids  *********/
@@ -292,6 +306,7 @@ button {
   .grid2_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 30px;
   }
   .order {
     order: 1;
@@ -308,19 +323,40 @@ button {
   grid-template-columns: 1fr 1fr;
 }
 
-/******* desktop version  *********/
+.center {
+  text-align: center;
+}
+
+/************************ desktop version  *************************/
 @media (min-width: 850px) {
   .desktoponly {
     display: block;
   }
-
+  .h1desktop {
+    margin-top: 3rem;
+  }
+  .h1desktop05 {
+    margin-top: 3rem;
+  }
+  .passion {
+    margin-bottom: 4rem;
+  }
+  .virksomhed {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  .h1mobile {
+    margin-bottom: 3rem;
+  }
   .ramme {
     margin-left: 2rem;
   }
-
+  .ramme3 {
+    margin-left: 0.5rem;
+  }
   p {
     margin-bottom: 2rem;
-    margin-right: 2rem;
+    margin-right: 1.5rem;
   }
   .pmargin {
     margin-left: 2rem;
@@ -333,13 +369,26 @@ button {
     margin-left: 2rem;
   }
 
+  .h2ab {
+    margin-left: 2rem;
+    margin-top: 0rem;
+  }
+
+  .h2ab1 {
+    margin-top: 2rem;
+  }
+
+  .h2ab2 {
+    font-size: 25px;
+  }
+
   .form-row {
     margin-left: 1.5rem;
     margin-right: 2rem;
   }
 }
 
-/******* mobile version  *********/
+/***************************** mobile version  ************************/
 @media (max-width: 850px) {
   .mobileonly {
     display: block;
@@ -359,15 +408,26 @@ button {
   .ramme {
     border: 5px solid #5362ae;
   }
+
+  .amandabechimg {
+    width: 100%;
+  }
   h2 {
     margin-left: 1rem;
     margin-right: 1rem;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+    font-size: 22px;
+  }
+  .h1mobile {
+    margin-bottom: 2rem;
   }
   h1 {
-    font-size: 50px;
+    font-size: 33px;
     margin-top: 3rem;
+  }
+  .h2ab {
+    margin-top: 2rem;
   }
 
   .pmarginmobile {
@@ -376,13 +436,13 @@ button {
   p {
     margin-left: 1rem;
     margin-right: 1rem;
+    font-size: 14px;
   }
   .form-row {
     margin-left: 1rem;
     margin-right: 2rem;
   }
   .button {
-    margin-left: 1rem;
     font-size: 20px;
     border: 10px solid #f34e4c;
   }
@@ -394,23 +454,69 @@ button {
     font-size: 20px;
     border: 10px solid #f34e4c;
   }
+  .h2footer {
+    font-size: 15px;
+  }
+
+  .passion {
+    font-size: 28px;
+    margin-bottom: 2rem;
+  }
+
+  .virksomhed {
+    font-size: 28px;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+  }
+  .h2ab2 {
+    font-size: 20px;
+  }
 }
 
-/****** tablet version *******/
-@media (max-width: 1200px) {
+/**************************** Tablet version ***************************/
+@media (max-width: 1300px) {
   .linjer {
     margin-top: 1rem;
   }
 }
+@media (min-width: 700px) and (max-width: 1040px) {
+  h1 {
+    font-size: 52px;
+  }
 
-/******** Footer  **********/
-.grid_1-1-1-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  h2 {
+    font-size: 28px;
+  }
+
+  .passion {
+    font-size: 45px;
+    margin-bottom: 2rem;
+  }
+
+  .virksomhed {
+    font-size: 45px;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+  }
+
+  .ptablet {
+    font-size: 13px;
+  }
 }
 
-.grid_1-1-1-1 img {
-  width: 40%;
+/******************************** Footer  ******************************/
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid_1-1-1 img {
+  width: 50%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 footer {
@@ -419,8 +525,11 @@ footer {
 }
 
 .footerline {
-  border-left: 2px solid black;
+  border-left: 2px solid #5362ae;
 }
-.amandabechimg {
-  border-radius: 5px;
+
+@media (max-width: 850px) {
+  .h2footer {
+    font-size: 15px;
+  }
 }
