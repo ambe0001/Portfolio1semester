@@ -506,6 +506,7 @@ button {
 
 /******************************** Footer  ******************************/
 .grid_1-1-1 {
+  grid-column: 1;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   display: flex;
@@ -515,8 +516,6 @@ button {
 
 .grid_1-1-1 img {
   width: 50%;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
 }
 
 footer {
@@ -525,11 +524,27 @@ footer {
 }
 
 .footerline {
-  border-left: 2px solid #5362ae;
+  border-right: 2px solid #5362ae;
+  margin-bottom: 2rem;
+}
+
+.h2footer {
+  font-size: 20px;
+}
+
+.h2footer2 {
+  font-size: 20px;
+  padding-bottom: 2rem;
+}
+.insta {
+  margin-left: 1rem;
 }
 
 @media (max-width: 850px) {
   .h2footer {
-    font-size: 15px;
+    font-size: 16px;
+  }
+  .h2footer2 {
+    font-size: 16px;
   }
 }
