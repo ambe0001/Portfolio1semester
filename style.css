@@ -292,7 +292,7 @@ button {
   color: white;
 }
 .figma {
-  color: #5362ae;
+  color: #f34e4c;
 }
 
 /********* Layout grids  *********/
@@ -312,12 +312,13 @@ button {
     order: 1;
   }
 }
-/********* svg bølge  **********/
+/******************* svg bølge  *******************/
 .desktoponly,
 .mobileonly {
   display: none;
 }
 
+/************************ desktop version  *************************/
 .grid3_1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -326,8 +327,6 @@ button {
 .center {
   text-align: center;
 }
-
-/************************ desktop version  *************************/
 @media (min-width: 850px) {
   .desktoponly {
     display: block;
