@@ -57,6 +57,7 @@ img {
 }
 
 /********************************** Ramme om billeder  ***************************/
+
 .ramme {
   width: 100%;
   border: 32px solid #5362ae;
@@ -105,8 +106,8 @@ h2 {
 
 p {
   font-family: "Roboto Slab", serif;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 300;
   font-style: normal;
   line-height: 1.7rem;
 }
@@ -194,6 +195,12 @@ button {
 }
 .linjer {
   margin-top: 6rem;
+}
+
+svg {
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 /******************************** Footer  ******************************/
