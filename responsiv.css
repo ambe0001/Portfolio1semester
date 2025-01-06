@@ -1,4 +1,6 @@
-/********* Layout grids  *********/
+/*************************************************************** Layout og Grids  ***********************************************/
+
+/************************ Desktop version  *************************/
 
 @media (min-width: 850px) {
   .grid_1-1 {
@@ -6,50 +8,28 @@
     grid-template-columns: 1fr 1fr;
     margin-bottom: 4rem;
   }
-
   .order {
     order: 1;
   }
-}
 
-/************************ desktop version  *************************/
-
-@media (min-width: 850px) {
   .desktoponly {
     display: block;
   }
+  /* margins */
   .h1desktop {
     margin-top: 3rem;
   }
-  .h1desktop05 {
-    margin-top: 3rem;
+  .h1AB {
+    margin-bottom: 3rem;
   }
+
   .passion {
     margin-bottom: 4rem;
   }
   .virksomhed {
     margin-bottom: 4rem;
   }
-  .h1mobile {
-    margin-bottom: 3rem;
-  }
-  .ramme {
-    margin-left: 2rem;
-  }
-  .ramme3 {
-    margin-left: 0.5rem;
-  }
-  p {
-    margin-bottom: 2rem;
-    margin-right: 1.5rem;
-  }
-  .pmargindesktop {
-    margin-left: 2rem;
-  }
 
-  .pmargindesktop2 {
-    margin-bottom: 4rem;
-  }
   h2 {
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -62,86 +42,75 @@
     margin-left: 2rem;
     margin-top: 0rem;
   }
-  .h2AB2 {
-    font-size: 25px;
+  p {
+    margin-bottom: 2rem;
+    margin-right: 1.5rem;
+  }
+  .pmargindesktop {
+    margin-left: 2rem;
   }
 
+  .pmargindesktop2 {
+    margin-bottom: 4rem;
+  }
+
+  .ramme {
+    margin-left: 2rem;
+  }
+  .ramme3 {
+    margin-left: 0.5rem;
+  }
   .form-row {
     margin-left: 1.5rem;
     margin-right: 2rem;
   }
 }
 
-/***************************** mobile version  ************************/
+/***************************** Mobile version  ************************/
 @media (max-width: 850px) {
   .mobileonly {
     display: block;
   }
-
   .svg1 {
     width: 0%;
     height: 0%;
+  }
+  .ramme {
+    border: 5px solid #5362ae;
   }
   .ramme2 {
     border: 5px solid #5362ae;
     width: 100%;
   }
-  .ramme {
-    border: 5px solid #5362ae;
-  }
-
   .amandabechimg {
     width: 100%;
   }
-  h2 {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    font-size: 22px;
-  }
-  .h1mobile {
-    margin-bottom: 2rem;
-  }
-  h1 {
-    font-size: 33px;
-    margin-top: 3rem;
-  }
-  .h2AB {
-    margin-top: 2rem;
-  }
-  .pmarginmobile {
-    margin-bottom: 4rem;
-  }
-  .pmarginmobile2 {
-    margin-bottom: 1rem;
-  }
-  p {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 3rem;
-    font-size: 14px;
-  }
+
   .form-row {
     margin-left: 1rem;
     margin-right: 2rem;
   }
-  .button {
-    font-size: 20px;
-    border: 10px solid #f34e4c;
-  }
 
   button {
-    background-color: #f34e4c;
     width: 25%;
     height: 25%;
     font-size: 20px;
     border: 10px solid #f34e4c;
   }
-  .h2footer {
-    font-size: 15px;
+
+  .button {
+    font-size: 20px;
+    border: 10px solid #f34e4c;
   }
 
+  /* skriftstørrelser og margins */
+  h1 {
+    font-size: 33px;
+    margin-top: 3rem;
+  }
+  .h1mobile {
+    margin-bottom: 2rem;
+  }
   .passion {
     font-size: 28px;
     margin-bottom: 2rem;
@@ -152,8 +121,31 @@
     margin-bottom: 2rem;
     margin-top: 3rem;
   }
-  .h2AB2 {
-    font-size: 20px;
+  h2 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 22px;
+  }
+  .h2AB {
+    margin-top: 2rem;
+  }
+  p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+    font-size: 14px;
+  }
+  .pmarginmobile {
+    margin-bottom: 4rem;
+  }
+  .pmarginmobile2 {
+    margin-bottom: 1rem;
+  }
+
+  .textfooter {
+    font-size: 15px;
   }
 }
 
@@ -163,8 +155,14 @@
     margin-top: 1rem;
   }
 }
-/* skriftstørrerelsen */
 @media (min-width: 700px) and (max-width: 1040px) {
+  button {
+    width: 25%;
+    height: 25%;
+    font-size: 18px;
+    border: 10px solid #f34e4c;
+  }
+  /* skriftstørrerelsen */
   h1 {
     font-size: 52px;
   }
@@ -182,14 +180,7 @@
     margin-bottom: 2rem;
     margin-top: 3rem;
   }
-
   .ptablet {
     font-size: 13px;
-  }
-}
-/* burgermenu */
-@media (min-width: 750px) and (max-width: 850px) {
-  nav.active .menu {
-    margin-top: 8%;
   }
 }
