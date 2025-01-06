@@ -13,143 +13,6 @@ img {
   object-fit: cover;
 }
 
-/************************************ Menu ************************************/
-
-header {
-  position: sticky;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fffeef;
-  z-index: 10;
-}
-
-.logo {
-  width: 7%;
-  margin: 0.5rem;
-  margin-left: 1rem;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-}
-
-.menu {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  color: #fffeef;
-  font-weight: 400;
-  font-family: "Roboto Flex", sans-serif;
-  font-size: 30px;
-  margin-right: 50px;
-}
-
-.menu li {
-  margin-right: 20px;
-  background-color: #fffeef;
-  border-width: 5cm;
-  float: left;
-}
-.menu li:hover {
-  color: #5362ae;
-  background-color: #fffeef;
-  transition: all 0.3s ease;
-}
-.activ {
-  color: #5362ae;
-  text-decoration: underline;
-}
-.menu li:last-child {
-  margin-right: 0;
-}
-
-.menu a {
-  display: block;
-  padding: 30px;
-  color: black;
-  text-decoration: none;
-  transition: color 0.3s, text-decoration-thickness 0.3s ease;
-  text-decoration-thickness: 0;
-}
-
-.menu a:hover {
-  color: #5362ae;
-  text-decoration: underline;
-  text-decoration-thickness: 3px;
-}
-
-.burger {
-  width: 30px;
-  height: 20px;
-  cursor: pointer;
-}
-
-.burger .line {
-  width: 100%;
-  height: 2px;
-  background-color: #5362ae;
-  margin-bottom: 5px;
-  transition: 0.2s linear;
-}
-.burger {
-  display: none;
-}
-
-/*********************************** Burgermenu ******************************/
-
-@media screen and (max-width: 850px) {
-  .menu {
-    display: none;
-  }
-  .burger {
-    display: block;
-    margin-right: 0.5rem;
-  }
-  .burger.active .line:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-    transition: 0.2s linear;
-  }
-
-  .burger.active .line:nth-child(2) {
-    opacity: 0;
-    transition: 0.15s linear;
-  }
-
-  .burger.active .line:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-    transition: 0.2s linear;
-  }
-  nav.active .menu {
-    display: block;
-    background-color: #fffeef;
-    position: absolute;
-    top: 0px;
-    left: 0;
-    width: 100%;
-    margin-top: 9%;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1;
-    height: 1000px;
-  }
-
-  nav.active .menu li {
-    margin: 10px 20px;
-  }
-
-  nav.active .menu a {
-    font-size: 16px;
-    text-align: center;
-  }
-  li {
-    clear: left;
-    width: 90%;
-  }
-}
-
 /********************************************* Forside  **********************************/
 .forsidebaggrund {
   background-image: url(imgs/forsidebaggrund.webp);
@@ -180,21 +43,18 @@ nav {
   border: 32px solid #5362ae;
   border-radius: 10px;
 }
+/* amandabechside */
 .ramme3 {
   width: 100%;
   border: 5px solid #5362ae;
   border-radius: 10px;
   background-color: #fffeef;
 }
-
 .amandabechimg {
   border-radius: 5px;
   width: 98%;
 }
 
-.linjer {
-  margin-top: 6rem;
-}
 /************************************ Overskrifter og tekst ***********************/
 
 h1 {
@@ -208,7 +68,6 @@ h1 {
 .passion {
   font-size: 70px;
 }
-
 .virksomhed {
   font-size: 70px;
 }
@@ -228,7 +87,11 @@ p {
   line-height: 1.7rem;
 }
 
-/************* KONTAKTFORMULAR *************/
+.center {
+  text-align: center;
+}
+
+/*********************** KONTAKTFORMULAR **********************/
 .contact-container p {
   font-family: "Roboto Mono", monospace;
   font-size: 1rem;
@@ -282,7 +145,7 @@ button {
   margin-bottom: 2rem;
 }
 
-/******* besøg website knap og a tag til figma ********/
+/************** Besøg website knap og a tag til figma *****************/
 
 .button {
   background-color: #f34e4c;
@@ -297,219 +160,41 @@ button {
 }
 .figma {
   color: #f34e4c;
+  font-weight: 700;
 }
 
-/********* Layout grids  *********/
-
-@media (min-width: 850px) {
-  .grid_1-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .grid2_1-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-  }
-  .order {
-    order: 1;
-  }
-}
-/******************* svg bølge  *******************/
+/******************* SVG bølge lavet med ChatGPT  *******************/
 .desktoponly,
 .mobileonly {
   display: none;
 }
+.linjer {
+  margin-top: 6rem;
+}
 
-/************************ desktop version  *************************/
+/******************************** Footer  ******************************/
+footer {
+  background-color: #fffeef;
+  margin-top: 2rem;
+}
+
 .grid3_1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
-.center {
-  text-align: center;
+.textfooter {
+  font-size: 20px;
 }
-@media (min-width: 850px) {
-  .desktoponly {
-    display: block;
-  }
-  .h1desktop {
-    margin-top: 3rem;
-  }
-  .h1desktop05 {
-    margin-top: 3rem;
-  }
-  .passion {
-    margin-bottom: 4rem;
-  }
-  .virksomhed {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-  }
-  .h1mobile {
-    margin-bottom: 3rem;
-  }
-  .ramme {
-    margin-left: 2rem;
-  }
-  .ramme3 {
-    margin-left: 0.5rem;
-  }
-  p {
-    margin-bottom: 2rem;
-    margin-right: 1.5rem;
-  }
-  .pmargin {
-    margin-left: 2rem;
-  }
-  h2 {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-  }
-  .h2margin {
-    margin-left: 2rem;
-  }
-
-  .h2ab {
-    margin-left: 2rem;
-    margin-top: 0rem;
-  }
-
-  .h2ab1 {
-    margin-top: 2rem;
-  }
-
-  .h2ab2 {
-    font-size: 25px;
-  }
-
-  .form-row {
-    margin-left: 1.5rem;
-    margin-right: 2rem;
-  }
+.textfooter2 {
+  font-size: 20px;
+  padding-bottom: 2rem;
+}
+.footerline {
+  border-right: 2px solid #5362ae;
+  margin-bottom: 2rem;
 }
 
-/***************************** mobile version  ************************/
-@media (max-width: 850px) {
-  .mobileonly {
-    display: block;
-  }
-
-  .svg1 {
-    width: 0%;
-    height: 0%;
-  }
-  .ramme2 {
-    border: 5px solid #5362ae;
-    width: 100%;
-  }
-  .ramme {
-    border: 5px solid #5362ae;
-  }
-
-  .amandabechimg {
-    width: 100%;
-  }
-  h2 {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    font-size: 22px;
-  }
-  .h1mobile {
-    margin-bottom: 2rem;
-  }
-  h1 {
-    font-size: 33px;
-    margin-top: 3rem;
-  }
-  .h2ab {
-    margin-top: 2rem;
-  }
-
-  .pmarginmobile {
-    margin-bottom: 2rem;
-  }
-  p {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    font-size: 14px;
-  }
-  .form-row {
-    margin-left: 1rem;
-    margin-right: 2rem;
-  }
-  .button {
-    font-size: 20px;
-    border: 10px solid #f34e4c;
-  }
-
-  button {
-    background-color: #f34e4c;
-    width: 25%;
-    height: 25%;
-    font-size: 20px;
-    border: 10px solid #f34e4c;
-  }
-  .h2footer {
-    font-size: 15px;
-  }
-
-  .passion {
-    font-size: 28px;
-    margin-bottom: 2rem;
-  }
-
-  .virksomhed {
-    font-size: 28px;
-    margin-bottom: 2rem;
-    margin-top: 3rem;
-  }
-  .h2ab2 {
-    font-size: 20px;
-  }
-}
-
-/**************************** Tablet version ***************************/
-@media (max-width: 1300px) {
-  .linjer {
-    margin-top: 1rem;
-  }
-}
-@media (min-width: 700px) and (max-width: 1040px) {
-  h1 {
-    font-size: 52px;
-  }
-
-  h2 {
-    font-size: 28px;
-  }
-
-  .passion {
-    font-size: 45px;
-    margin-bottom: 2rem;
-  }
-
-  .virksomhed {
-    font-size: 45px;
-    margin-bottom: 2rem;
-    margin-top: 3rem;
-  }
-
-  .ptablet {
-    font-size: 13px;
-  }
-}
-@media (min-width: 750px) and (max-width: 850px) {
-  nav.active .menu {
-    margin-top: 8%;
-  }
-}
-
-/******************************** Footer  ******************************/
+/* ikoner */
 .grid_1-1-1 {
   grid-column: 1;
   display: grid;
@@ -518,38 +203,19 @@ button {
   justify-content: center;
   align-items: center;
 }
-
 .grid_1-1-1 img {
   width: 50%;
-}
-
-footer {
-  background-color: #fffeef;
-  margin-top: 2rem;
-}
-
-.footerline {
-  border-right: 2px solid #5362ae;
-  margin-bottom: 2rem;
-}
-
-.h2footer {
-  font-size: 20px;
-}
-
-.h2footer2 {
-  font-size: 20px;
-  padding-bottom: 2rem;
 }
 .insta {
   margin-left: 1rem;
 }
 
+/* mobil version footer */
 @media (max-width: 850px) {
-  .h2footer {
+  .textfooter {
     font-size: 16px;
   }
-  .h2footer2 {
+  .textfooter2 {
     font-size: 16px;
   }
 }
