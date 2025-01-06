@@ -32,6 +32,30 @@ img {
   color: white;
 }
 
+.forsideskrift {
+  animation-name: forsideskrift_kf;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes forsideskrift_kf {
+  10% {
+    scale: 1;
+  }
+  30% {
+    scale: 1.05;
+  }
+  50% {
+    scale: 1.1;
+  }
+  70% {
+    scale: 1.05;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
 /********************************** Ramme om billeder  ***************************/
 .ramme {
   width: 100%;
