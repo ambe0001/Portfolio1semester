@@ -4,13 +4,9 @@
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 4rem;
   }
 
-  .grid2_1-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-  }
   .order {
     order: 1;
   }
@@ -32,7 +28,6 @@
     margin-bottom: 4rem;
   }
   .virksomhed {
-    margin-top: 4rem;
     margin-bottom: 4rem;
   }
   .h1mobile {
@@ -51,6 +46,10 @@
   .pmargindesktop {
     margin-left: 2rem;
   }
+
+  .pmargindesktop2 {
+    margin-bottom: 4rem;
+  }
   h2 {
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -59,16 +58,11 @@
     margin-left: 2rem;
   }
 
-  .h2ab {
+  .h2AB {
     margin-left: 2rem;
     margin-top: 0rem;
   }
-
-  .h2ab1 {
-    margin-top: 2rem;
-  }
-
-  .h2ab2 {
+  .h2AB2 {
     font-size: 25px;
   }
 
@@ -113,7 +107,7 @@
     font-size: 33px;
     margin-top: 3rem;
   }
-  .h2ab {
+  .h2AB {
     margin-top: 2rem;
   }
   .pmarginmobile {
@@ -158,7 +152,7 @@
     margin-bottom: 2rem;
     margin-top: 3rem;
   }
-  .h2ab2 {
+  .h2AB2 {
     font-size: 20px;
   }
 }
